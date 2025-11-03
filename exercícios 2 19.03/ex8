@@ -1,0 +1,33 @@
+'''
+Ler um valor em reais e mostrar qual o número de notas de
+100, 50, 20, 10, 5 e 2 em que o valor lido pode ser decomposto. 
+Escrever o valor lido e a relação de notas necessárias.
+'''
+
+reais = float(input('Digite o valor de reias: '))
+valor_inteiro = int(reais)
+notas100 = valor_inteiro // 100
+valor_inteiro %= 100
+notas50 = valor_inteiro // 50
+valor_inteiro %= 50
+notas20 = valor_inteiro // 20
+valor_inteiro %= 20
+notas10 = valor_inteiro // 10
+valor_inteiro %= 10
+notas5 = valor_inteiro // 5
+valor_inteiro %= 5
+notas2 = valor_inteiro //2
+valor_inteiro %= 2
+print(f'Valor: R${reais:.2f}')
+if notas100 > 0:
+    print(f'Notas de R$100: {notas100}')
+if notas50 > 0:
+    print(f'Notas de R$50: {notas50}')
+if notas20 > 0:
+    print(f'Notas de R$20: {notas20}')
+if notas10 > 0:
+    print(f'Notas de R$10: {notas10}')
+if notas5 > 0:
+    print(f'Notas de R$5: {notas5}')
+if notas2 > 0:
+    print(f'Notas de R$2: {notas2}')

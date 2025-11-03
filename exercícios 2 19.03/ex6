@@ -1,0 +1,28 @@
+'''
+Uma empresa concederá um aumento de salário aos seus funcionários, 
+variável de acordo com o cargo, conforme a tabela abaixo. 
+Leia o salário e o cargo de um funcionário e calcule o novo salário. 
+Se o cargo do funcionário não estiver na tabela, ele deverá, então, receber 40% de aumento. 
+Mostre o salário antigo, o novo salário e a diferença. 
+
+Código 	Cargo	 Percentual 
+101	    Gerente	    10%
+102	    Engenheiro	20%
+103	    Técnico	    30%
+'''
+
+salario_antigo = float(input('Digite o salario antigo: '))
+cargo = int(input('Digite o codigo de seu cargo: '))
+if cargo == 101:
+    percentual_aumento = 0.10
+elif cargo == 102:
+    percentual_aumento = 0.20
+elif cargo == 103:
+    percentual_aumento = 0.30
+else: 
+    percentual_aumento = 0.40
+aumento = salario_antigo * percentual_aumento
+salario_novo = salario_antigo + aumento
+print('Salario antigo: {}'.format(salario_antigo))
+print('Salario novo: {}'.format(salario_novo))
+print('Diferença: {}'.format(aumento))

@@ -1,0 +1,17 @@
+def calcular_notas(valor):
+    valor_inteiro = int(valor)  # Apenas a parte inteira, ignorando centavos
+    notas_disponiveis = [100, 50, 20, 10, 5, 2]  # Lista ordenada das maiores para as menores
+    notas = {}
+
+    for nota in notas_disponiveis:
+        notas[nota], valor_inteiro = divmod(valor_inteiro, nota)  # Obtém quantidade de notas e o restante
+
+    # Exibe os resultados
+    print(f'Valor: R${valor:.2f}')
+    for nota, quantidade in notas.items():
+        if quantidade > 0:
+            print(f'Notas de R${nota}: {quantidade}')
+
+# Entrada do usuário
+reais = float(input('Digite o valor em reais: '))
+calcular_notas(reais)

@@ -1,0 +1,9 @@
+'''
+4. Leia a quotação do dólar do dia e uma quantidade de Reais a ser convertida para dólares.
+A final, exibir o valor correspondente em dólares aos Reais informados.
+'''
+
+quotacao = float(input('Digite o valor do Dólar hoje: '))
+reais = float(input('Digite o valor em BRL a ser convertido: '))
+dolar = round(reais / quotacao)
+print('Dólar: $',dolar)

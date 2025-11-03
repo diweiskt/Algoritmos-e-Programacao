@@ -1,0 +1,13 @@
+'''
+Leia 3 notas de um aluno e em seguida calcule a média aritmética e mostre, além do valor da média, 
+uma mensagem de "APROVADO", caso a média seja igual ou superior a 7, ou a mensagem "REPROVADO", caso contrário.
+'''
+
+notaA = float(input('Digite a nota da Prova A: '))
+notaB = float(input('Digite a nota da Prova B: '))
+notaC = float(input('Digite a nota do Trabalho: '))
+media = (notaA + notaB + notaC) / 3
+if media >= 7:
+    print('Sua media foi {}, e você foi APROVADO!'.format(media))
+else:
+    print('Sua media foi {}, e você foi REPROVADO!'.format(media))

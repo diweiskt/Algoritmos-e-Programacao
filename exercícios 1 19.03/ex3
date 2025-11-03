@@ -1,0 +1,8 @@
+'''
+3. Leia um valor de temperatura em graus Celsius, calcule e exiba
+a temperatura correspondente em graus Kelvin (sabendo que Kelvin = Celsius + 273)
+'''
+
+celsius = int(input('Digite quantos graus Celsius está hoje: '))
+kelvin = celsius + 273
+print(kelvin, 'Graus Kevin')

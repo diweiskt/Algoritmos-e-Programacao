@@ -1,0 +1,19 @@
+'''
+Leia dois valores inteiros e diferentes em seguida apresenta o MAIOR e o MENOR número.
+'''
+
+v1 = int(input('Digite o um Valor: '))
+while True:
+    v2 = int(input('Digite outro Valor: '))
+    if v1 != v2:
+        break
+    else:
+        print('Os valores devem ser DIFERENTES, tente novamente: ')
+if v1 > v2:
+    maior = v1
+    menor = v2
+else:
+    maior = v2
+    menor = v1
+print('O valor maior é: ',maior)
+print('O valor menor é: ',menor)
